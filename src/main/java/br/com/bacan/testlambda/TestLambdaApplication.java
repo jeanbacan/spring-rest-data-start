@@ -7,6 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TestLambdaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestLambdaApplication.class, args);
+		//SpringApplication.run(TestLambdaApplication.class, args);
+		
+		Thread threadTeste = new Thread(() -> {System.out.println(" Mah Oi Lambda ");});
+		threadTeste.start();
+		
 	}
 }
+
